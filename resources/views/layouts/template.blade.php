@@ -52,7 +52,8 @@
             <li><a href="{{ route('barang.index')}}">Barang</a></li>            
             <li><a href="{{ route('pembelian.index')}}">Pembelian</a></li>
             <li><a href="{{ route('penjualan.index')}}">Penjualan</a></li>
-            <li><a href="{{ route('laporan.index')}}">Laporan Keuangan</a></li>
+            <li><a href="{{ url('/jual') }}">Laporan Penjualan</a></li>
+            <li><a href="{{ url('/beli') }}">Laporan Pembelian</a></li>
 
                                     
 

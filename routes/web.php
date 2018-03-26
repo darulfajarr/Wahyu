@@ -33,5 +33,9 @@ Route::group(['middleware'=>['auth', 'role:karyawan|admin']], function(){
 		Route::resource('/pembelian','PembelianController');
 		Route::resource('/penjualan','PenjualanController');
 		Route::resource('/laporan','LaporanController');
+		Route::get('jual','laporanpenjualanController@index');
+		Route::post('jual/penjualan','laporanpenjualanController@index2');
+		Route::get('beli','laporanpembelianController@index');
+		Route::post('beli/pembelian','laporanpembelianController@index2');
 		
 });
